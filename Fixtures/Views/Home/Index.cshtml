@@ -1,31 +1,434 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    ViewBag.Title = "Index";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+<div class="index-banner">
+    <div class="wmuSlider example1">
+        <div class="wmuSliderWrapper">
+            <article style="position: absolute; width: 100%; opacity: 0;">
+                <div class="banner-wrap">
+                    <div class="slider-left">
+                        <h3>We Believe</h3>
+                        <h4>In Quality Design</h4>
+                        <p class="top">Any Creative Project is Unique</p>
+                        <p class="middle">and should be provided with</p>
+                        <p class="bottom">the appropriate quality</p>
+                        <button class="btn btn-8 btn-8b"><a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a></button>
+                        <!-- start magnific-->
+                        <div id="small-dialog" class="mfp-hide">
+                            <div class="plans_table">
+
+                                <table width="100%" cellspacing="0" class="compare_plan">
+                                    <thead>
+                                        <tr>
+                                            <th class="plans-list"><h3>Plan Features</h3></th>
+                                            <th class="plans-list"><h3>Basic</h3><h4>$5<small>/month</small></h4></th>
+                                            <th class="plans-list"><h3>Economy</h3><h4>$9<small>/month</small></h4></th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <td> </td>
+                                            <td class="order_now"><a href="#account" class="scroll"><button>Order Now</button></a></td>
+                                            <td class="order_now"><a href="#account" class="scroll"><button>Order Now</button></a></td>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td class="plan_list_title">Web Space</td>
+                                            <td class="price_body">Unlimited</td>
+                                            <td class="price_body">Unlimited</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="plan_list_title">Bandwidth</td>
+                                            <td class="price_body">Unlimited</td>
+                                            <td class="price_body">Unlimited</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="plan_list_title">25 GB Storage</td>
+                                            <td class="price_body"><img src="~/Content/HomeController/images/icon-remove.png" alt="img"></td>
+                                            <td class="price_body">Unlimited</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="plan_list_title">iPhone App</td>
+                                            <td class="price_body"><img src="~/Content/HomeController/images/icon-remove.png" alt="img"></td>
+                                            <td class="price_body">Unlimited</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="plan_list_title">Enhanced Security</td>
+                                            <td class="price_body"><img src="~/Content/HomeController/images/tickmark-icon.png" alt="img"></td>
+                                            <td class="price_body"><img src="~/Content/HomeController/images/tickmark-icon.png" alt="img"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="plan_list_title">E-mail</td>
+                                            <td class="price_body"><img src="~/Content/HomeController/images/tickmark-icon.png" alt="img"></td>
+                                            <td class="price_body"><img src="~/Content/HomeController/images/tickmark-icon.png" alt="img"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="plan_list_title">Wordpress Support</td>
+                                            <td class="price_body"><img src="~/Content/HomeController/images/icon-remove.png" alt="img"></td>
+                                            <td class="price_body"><img src="~/Content/HomeController/images/tickmark-icon.png" alt="img"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="plan_list_title">24/7 Support</td>
+                                            <td class="price_body"><img src="~/Content/HomeController/images/tickmark-icon.png" alt="img"></td>
+                                            <td class="price_body"><img src="~/Content/HomeController/images/tickmark-icon.png" alt="img"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="plan_list_title">Backups</td>
+                                            <td class="price_body"><img src="~/Content/HomeController/images/tickmark-icon.png" alt="img"></td>
+                                            <td class="price_body"><img src="~/Content/HomeController/images/tickmark-icon.png" alt="img"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="plan_list_title">Dedicated IP</td>
+                                            <td class="price_body">$2/mo</td>
+                                            <td class="price_body">$2/mo</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- end magnific-->
+                    </div>
+                    <div class="slider-right">
+                        <img src="~/Content/HomeController/images/banner-left.png" />
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </article>
+            <article style="position: relative; width: 100%; opacity: 1;">
+                <div class="banner-wrap">
+                    <div class="slider-right">
+                        <img src="~/Content/HomeController/images/banner-left.png" />
+                    </div>
+                    <div class="slider-left">
+                        <h3>We Believe</h3>
+                        <h4>In Quality Design</h4>
+                        <p class="top">Any Creative Project is Unique</p>
+                        <p class="middle">and should be provided with</p>
+                        <p class="bottom">the appropriate quality</p>
+                        <button class="btn btn-8 btn-8b"><a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a></button>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </article>
+            <article style="position: absolute; width: 100%; opacity: 0;">
+                <div class="banner-wrap">
+                    <div class="slider-left">
+                        <h3>We Believe</h3>
+                        <h4>In Quality Design</h4>
+                        <p class="top">Any Creative Project is Unique</p>
+                        <p class="middle">and should be provided with</p>
+                        <p class="bottom">the appropriate quality</p>
+                        <button class="btn btn-8 btn-8b"><a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a></button>
+                    </div>
+                    <div class="slider-right">
+                        <img src="~/Content/HomeController/images/banner-left.png" />
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </article>
+            <article style="position: absolute; width: 100%; opacity: 0;">
+                <div class="banner-wrap">
+                    <div class="slider-right">
+                        <img src="~/Content/HomeController/images/banner-left.png" />
+                    </div>
+                    <div class="slider-left">
+                        <h3>We Believe</h3>
+                        <h4>In Quality Design</h4>
+                        <p class="top">Any Creative Project is Unique</p>
+                        <p class="middle">and should be provided with</p>
+                        <p class="bottom">the appropriate quality</p>
+                        <button class="btn btn-8 btn-8b"><a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a></button>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </article>
+            <article style="position: absolute; width: 100%; opacity: 0;">
+                <div class="banner-wrap">
+                    <div class="slider-left">
+                        <h3>We Believe</h3>
+                        <h4>In Quality Design</h4>
+                        <p class="top">Any Creative Project is Unique</p>
+                        <p class="middle">and should be provided with</p>
+                        <p class="bottom">the appropriate quality</p>
+                        <button class="btn btn-8 btn-8b"><a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a></button>
+                    </div>
+                    <div class="slider-right">
+                        <img src="~/Content/HomeController/images/banner-left.png" />
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </article>
+        </div>
+        <a class="wmuSliderPrev">Previous</a><a class="wmuSliderNext">Next</a>
+        <ul class="wmuSliderPagination">
+            <li><a href="#" class="">0</a></li>
+            <li><a href="#" class="">1</a></li>
+            <li><a href="#" class="wmuActive">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+        </ul>
+    </div>
+    <script src="~/Content/HomeController/js/jquery.wmuSlider.js"></script>
+    <script src="~/Content/HomeController/js/modernizr.custom.min.js"></script>
+    <script>
+        $('.example1').wmuSlider();
+    </script>
+</div>
+<!---//End-da-slider----->
+<div class="main">
+    <div class="content-top">
+        <div class="wrap">
+            <h3>We Creative Quality Designs.</h3>
+            <h5>We Specialize in Web Design / Development and Graphic Design</h5>
+            <div class="section group">
+                <div class="col_1_of_4 span_1_of_first">
+                      <img src="/Content/HomeController/images/pic.jpg" alt="" />
+                    <div class="desc">
+                        <h4>Redesigning<br> with personality<br><span>in<span class="small">&nbsp;web design</span></span><div class="clear"></div></h4>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="grid1">
+                        <img src="/Content/HomeController/images/icon1.png" alt="" />
+                        <h4>Web development</h4>
+                    </div>
+                    <div class="desc">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="grid1">
+                        <img src="/Content/HomeController/images/icon2.png" alt="" />
+                        <h4>Web design</h4>
+                    </div>
+                    <div class="desc">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="grid1">
+                        <img src="/Content/HomeController/images/icon3.png" alt="" />
+                        <h4>Graphic design</h4>
+                    </div>
+                    <div class="desc">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="content-middle">
+        <h2><span>Our work</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+        <div id="container">
+            <div id="main1">
+                <ul id="tiles">
+                    <!-- These are our grid blocks -->
+                    <li>
+                        <a href="~/Content/HomeController/images/t-pic1.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic1.jpg" width="200" height="283">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/t-pic2.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic2.jpg" width="200" height="300">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/t-pic3.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic3.jpg" width="200" height="252">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/t-pic4.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic4.jpg" width="200" height="158">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/t-pic5.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic5.jpg" width="200" height="265">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/pic6.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic6.jpg" width="200" height="158">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/pic7.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic7.jpg" width="200" height="200">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/pic8.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic8.jpg" width="200" height="200">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/pic9.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic9.jpg" width="200" height="133">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/pic10.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic10.jpg" width="200" height="193">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/pic11.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic11.jpg" width="200" height="283">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/t-pic1.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic1.jpg" width="200" height="283">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/t-pic2.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic2.jpg" width="200" height="300">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/t-pic3.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic3.jpg" width="200" height="252">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/t-pic4.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic4.jpg" width="200" height="158">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/t-pic5.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic5.jpg" width="200" height="265">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/pic6.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic6.jpg" width="200" height="158">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/pic7.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic7.jpg" width="200" height="200">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/pic8.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic8.jpg" width="200" height="200">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/pic9.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic9.jpg" width="200" height="133">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Content/HomeController/images/pic10.jpg" rel="lightbox" class="cboxElement">
+                            <img src="~/Content/HomeController/images/pic10.jpg" width="200" height="193">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <link href="~/Content/HomeController/css/colorbox.css" rel="stylesheet" />
+        <!-- Include the imagesLoaded plug-in -->
+        <script src="~/Content/HomeController/js/jquery.imagesloaded.js"></script>
+        <!-- include colorbox -->
+        <script src="~/Content/HomeController/js/jquery.colorbox-min.js"></script>
+        <!-- Include the plug-in -->
+        <script src="~/Content/HomeController/js/jquery.wookmark.js"></script>
+        <!-- Once the page is loaded, initalize the plug-in. -->
+        <script type="text/javascript">
+            (function ($) {
+                $('#tiles').imagesLoaded(function () {
+                    // Prepare layout options.
+                    var options = {
+                        autoResize: true, // This will auto-update the layout when the browser window is resized.
+                        container: $('#main1'), // Optional, used for some extra CSS styling
+                        offset: 2, // Optional, the distance between grid items
+                        itemWidth: 200 // Optional, the width of a grid item
+                    };
+
+                    // Get a reference to your grid items.
+                    var handler = $('#tiles li');
+
+                    // Call the layout function.
+                    handler.wookmark(options);
+
+                    // Init lightbox
+                    $('a', handler).colorbox({
+                        rel: 'lightbox'
+                    });
+                });
+            })(jQuery);
+        </script>
+    </div>
+    <div class="content-bottom">
+        <h2><span>Our Clients</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+        <ul id="flexiselDemo3">
+            <li><img src="~/Content/HomeController/images/client1.jpg" /></li>
+            <li><img src="~/Content/HomeController/images/client2.jpg" /></li>
+            <li><img src="~/Content/HomeController/images/client3.jpg" /></li>
+            <li><img src="~/Content/HomeController/images/client4.jpg" /></li>
+            <li><img src="~/Content/HomeController/images/client5.jpg" /></li>
+            <li><img src="~/Content/HomeController/images/client6.jpg" /></li>
+            <li><img src="~/Content/HomeController/images/client7.jpg" /></li>
+            <li><img src="~/Content/HomeController/images/client8.jpg" /></li>
+        </ul>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $("#flexiselDemo1").flexisel();
+                $("#flexiselDemo2").flexisel({
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: {
+                            changePoint: 480,
+                            visibleItems: 1
+                        },
+                        landscape: {
+                            changePoint: 640,
+                            visibleItems: 2
+                        },
+                        tablet: {
+                            changePoint: 768,
+                            visibleItems: 3
+                        }
+                    }
+                });
+
+                $("#flexiselDemo3").flexisel({
+                    visibleItems: 5,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: {
+                            changePoint: 480,
+                            visibleItems: 1
+                        },
+                        landscape: {
+                            changePoint: 640,
+                            visibleItems: 2
+                        },
+                        tablet: {
+                            changePoint: 768,
+                            visibleItems: 3
+                        }
+                    }
+                });
+
+            });
+        </script>
+        <script src="~/Content/HomeController/js/jquery.flexisel.js"></script>
+     </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>

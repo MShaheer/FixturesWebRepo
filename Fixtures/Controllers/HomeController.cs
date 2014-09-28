@@ -13,11 +13,6 @@ namespace Fixtures.Controllers
             return View();
         }
 
-        public ActionResult TestAction()
-        {
-            return View();
-        }
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

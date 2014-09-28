@@ -1,44 +1,156 @@
 ﻿<!DOCTYPE html>
+
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+ 
+    <link href="~/Content/HomeController/css/style.css" rel="stylesheet" media="all" type="text/css" />
+    <script src="~/Content/HomeController/js/jquery.min.js"></script>
+    <!-- Add fancyBox main JS and CSS files -->
+    <script src="~/Content/HomeController/js/jquery.magnific-popup.js"></script>
+    <link href="~/Content/HomeController/css/magnific-popup.css" rel="stylesheet" />
+    
+    <script>
+        $(document).ready(function () {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: 'auto',
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+        });
+    </script>
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+
+    <div class="header">
+        <div class="wrap">
+            <div class="logo">
+                <a href="index.html"><img src="~/Content/HomeController/images/logo.png" alt="" /></a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            <div class="cssmenu">
+                <ul>
+                    <li class="active">@Html.ActionLink("Home", "Index", "Home") </li>
+                    <li>@Html.ActionLink("Find", "Listing", "Properties") </li>
+                    <li>@Html.ActionLink("Profile", "Profile", "Users") </li>
+                    <li>@Html.ActionLink("About Us", "About", "Home") </li>
+                    <li>@Html.ActionLink("Contact Us", "Contact", "Home") </li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="footer-top">
+            <div class="wrap">
+                <div class="section group">
+                    <div class="col_1_of_3 span_1_of_3">
+                        <h3>About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <button class="btn1 btn-8 btn-8b">Learn more</button>
+                        <h4>Photo Stream</h4>
+                        <div class="gallery">
+                            <ul>
+                                <li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="~/Content/HomeController/images/g1.jpg" alt="" /></a></li>
+                                <li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="~/Content/HomeController/images/g2.jpg" alt="" /></a></li>
+                                <li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="~/Content/HomeController/images/g3.jpg" alt="" /></a></li>
+                                <li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="~/Content/HomeController/images/g4.jpg" alt="" /></a></li>
+                                <li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="~/Content/HomeController/images/g5.jpg" alt="" /></a></li>
+                                <li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="~/Content/HomeController/images/g6.jpg" alt="" /></a></li>
+                                <div id="small-dialog1" class="mfp-hide">
+                                    <div class="pop_up">
+                                        <h2>A Sample Photo Stream</h2>
+                                        <img src="~/Content/HomeController/images/g_zoom.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col_1_of_3 span_1_of_3">
+                        <h3>Latest tweets</h3>
+                        <div class="footer-list">
+                            <ul>
+                                <li><img src="~/Content/HomeController/images/tw.png" alt="" /><p>Lorem ipsum <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
+                                <li><img src="~/Content/HomeController/images/tw.png" alt="" /><p>Lorem ipsum <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
+                                <li><img src="~/Content/HomeController/images/tw.png" alt="" /><p>Lorem ipsum dolor sit amet, <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, sed diam nonummy nibh<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
+                                <li><img src="~/Content/HomeController/images/tw.png" alt="" /><p>Lorem ipsum dolor sit amet, <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, sed diam nonummy nibh<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
+                                <li><img src="~/Content/HomeController/images/tw.png" alt="" /><p>Lorem ipsum <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
+                            </ul>
+                        </div>
+                        <div class="social-icons">
+                            <h4>Social Connecting</h4>
+                            <ul>
+                                <li class="facebook"><a href="#"><span> </span></a></li>
+                                <li class="google"><a href="#"><span> </span></a></li>
+                                <li class="twitter"><a href="#"><span> </span></a></li>
+                                <li class="linkedin"><a href="#"><span> </span></a></li>
+                                <li class="youtube"><a href="#"><span> </span></a></li>
+                                <li class="bloger"><a href="#"><span> </span></a></li>
+                                <li class="rss"><a href="#"><span> </span></a></li>
+                                <li class="dribble"><a href="#"><span> </span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col_1_of_3 span_1_of_3">
+                        <h3>Contact info</h3>
+                        <div class="footer-list">
+                            <ul>
+                                <li><img src="~/Content/HomeController/images/address.png" alt="" /><p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit, sed diam nonummy nibh<br>&nbsp;web design</p><div class="clear"></div></li>
+                                <li><img src="~/Content/HomeController/images/phone.png" alt="" /><p>Phone: +1 800 258 2689<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1 800 258 2689 </p><div class="clear"></div></li>
+                                <li><img src="~/Content/HomeController/images/msg.png" alt="" /><p>Email: <span class="yellow"><a href="#">info(at)skokov.com</a></span></p><div class="clear"></div></li>
+                            </ul>
+                        </div>
+                        <div class="follow">
+                            <h4>Follow Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+                            <div class="search">
+                                <form>
+                                    <input type="text" value="">
+                                    <input type="submit" value="">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrap">
+                <div class="copy">
+                    <p class="copy">© 2013 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li class="active"><a href="/Index">Home</a></li>
+                        <li><a href="/About">About Us</a></li>
+                        <li><a href="/Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+
 </body>
 </html>
