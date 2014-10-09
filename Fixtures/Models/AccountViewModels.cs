@@ -91,7 +91,7 @@ namespace Fixtures.Models
 
         [Required]
         [Display(Name = "Phone")]
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
 
         [Required]
         [Display(Name = "Description")]
