@@ -78,7 +78,18 @@ namespace Fixtures.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser() { UserName = model.UserName };
+                var user = new ApplicationUser() {
+                    UserName = model.UserName,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    Gender = model.Gender,
+                    BirthDate = model.BirthDate,
+                    Country = model.Country,
+                    City = model.City,
+                    Email = model.Email,
+                    PhoneNumber = model.PhoneNumber,
+                    Description = model.Description
+                };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

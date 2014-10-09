@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fixtures.Models
 {
@@ -59,5 +60,41 @@ namespace Fixtures.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+
+        [Required]
+        [Display(Name = "Gender")]
+        public string Gender { get; set; }
+
+        [Required]
+        [Display(Name = "Birth Date")]
+        public DateTime BirthDate { get; set; }
+
+        [Required]
+        [Display(Name = "Email")]
+        public string Email { get; set; }
+
+        [Required]
+        [Display(Name = "City")]
+        public string City { get; set; }
+
+        [Required]
+        [Display(Name = "Country")]
+        public string Country { get; set; }
+
+        [Required]
+        [Display(Name = "Phone")]
+        public int PhoneNumber { get; set; }
+
+        [Required]
+        [Display(Name = "Description")]
+        public string Description { get; set; }
     }
 }
