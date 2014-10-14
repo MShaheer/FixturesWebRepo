@@ -1,5 +1,9 @@
 ﻿using System;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
+using COMMON.Models;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Fixtures.Models
 {
@@ -15,6 +19,8 @@ namespace Fixtures.Models
         public string Country { get; set; }
         public int PhoneNumber { get; set; }
         public string Description { get; set; }
+        public List<Reference> References { get; set; }
+        public List<WishList> WishList { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -23,6 +29,9 @@ namespace Fixtures.Models
             : base("FixturesDb")
         {
         }
+
+        public DbSet<Property> Properties { get; set; }
+        public DbSet<RequestToBook> RequestsToBook { get; set; }
 
         protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
         {
