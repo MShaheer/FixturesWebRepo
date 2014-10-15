@@ -10,8 +10,14 @@ namespace Fixtures.Controllers
     {
         //
         // GET: /Properties/
-        public ActionResult Listing()
+        //public ActionResult Listing()
+        //{
+        //    return View();
+        //}
+
+        public ActionResult Listing(string location)
         {
+
             return View();
         }
 	}
