@@ -181,14 +181,21 @@
                         </ul>
                     </li>
                     <!-- inbox dropdown end -->
+                    @*pull-right*@
+                    <li class="active">@Html.ActionLink("Home", "Index", "Home") </li>
+                    <li>@Html.ActionLink("Find", "Listing", "Properties") </li>
+                    <li>@Html.ActionLink("Profile", "Profile", "Users") </li>
+                    <li>@Html.ActionLink("About Us", "About", "Home") </li>
+                    <li>@Html.ActionLink("Contact Us", "Contact", "Home") </li>
+
+
                 </ul>
                 <!--  notification end -->
+
             </div>
-            <div class="top-menu">
-                <ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="login.html">Logout</a></li>
-                </ul>
-            </div>
+            @Html.Partial("_LoginPartial")
+
+
         </header>
         <!--header end-->
 

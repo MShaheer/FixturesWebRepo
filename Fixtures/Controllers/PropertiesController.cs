@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Fixtures.Controllers
 {
+    [Authorize]
     public class PropertiesController : Controller
     {
         //
