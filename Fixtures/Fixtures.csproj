@@ -463,6 +463,7 @@
     <Content Include="Views\Shared\_LayoutDashboard.cshtml" />
     <Content Include="Views\Properties\Listing.cshtml" />
     <Content Include="Views\Users\Profile.cshtml" />
+    <Content Include="Views\Properties\PostAdd.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
