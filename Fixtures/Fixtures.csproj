@@ -172,6 +172,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\FixturesDb.mdf" />
+    <Content Include="App_Data\FixturesDb_log.ldf">
+      <DependentUpon>FixturesDb.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\HomeController\css\colorbox.css" />
@@ -459,10 +463,9 @@
     <Content Include="Views\Shared\_LayoutDashboard.cshtml" />
     <Content Include="Views\Properties\Listing.cshtml" />
     <Content Include="Views\Users\Profile.cshtml" />
+    <Content Include="Views\Properties\PostAdd.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
