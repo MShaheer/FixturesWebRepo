@@ -23,8 +23,9 @@
     <link href="~/Content/PropertiesController/assets/css/style-responsive.css" rel="stylesheet" />
 
    @* <link href="~/Content/HomeController/css/style.css" rel="stylesheet" media="all" type="text/css" />*@
-    <script src="~/Content/HomeController/js/jquery.min.js"></script>
-  
+   @* <script src="~/Content/HomeController/js/jquery.min.js"></script>*@
+    <script src="~/Content/PropertiesController/assets/js/jquery-1.8.3.min.js"></script>
+
 
     <script src="~/Content/PropertiesController/assets/js/chart-master/Chart.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -49,7 +50,8 @@
                 <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
             </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>FIXTURES</b></a>
+            <a href="/Home/Index" class="logo"><b>FIXTURES</b></a>
+           
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
@@ -313,10 +315,10 @@
         @*MAIN CONTENT END*@
 
         <!--footer start-->
-        <footer class="site-footer">
+        <footer id="footerBar" class="site-footer">
             <div class="text-center">
                 2014 - Alvarez.is
-                <a href="index.html#" class="go-top">
+                <a href="#" class="go-top">
                     <i class="fa fa-angle-up"></i>
                 </a>
             </div>
@@ -326,8 +328,7 @@
 
     <!-- js placed at the end of the document so the pages load faster -->
 
-    <script src="~/Content/PropertiesController/assets/js/jquery.js"></script>
-    <script src="~/Content/PropertiesController/assets/js/jquery-1.8.3.min.js"></script>
+  @*  <script src="~/Content/PropertiesController/assets/js/jquery.js"></script>*@
     <script src="~/Content/PropertiesController/assets/js/bootstrap.min.js"></script>
     <script src="~/Content/PropertiesController/assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="~/Content/PropertiesController/assets/js/jquery.scrollTo.min.js"></script>

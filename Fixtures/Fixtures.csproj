@@ -312,6 +312,7 @@
     <Content Include="Content\HomeController\js\jquery.wmuSlider.js" />
     <Content Include="Content\HomeController\js\jquery.wookmark.js" />
     <Content Include="Content\HomeController\js\modernizr.custom.min.js" />
+    <Content Include="Content\jquery.geocomplete.js" />
     <Content Include="Content\PropertiesController\assets\css\bootstrap.css" />
     <Content Include="Content\PropertiesController\assets\css\style-responsive.css" />
     <Content Include="Content\PropertiesController\assets\css\style.css" />
@@ -463,7 +464,7 @@
     <Content Include="Views\Shared\_LayoutDashboard.cshtml" />
     <Content Include="Views\Properties\Listing.cshtml" />
     <Content Include="Views\Users\Profile.cshtml" />
-    <Content Include="Views\Properties\PostAdd.cshtml" />
+    <Content Include="Views\Properties\PostAd.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
