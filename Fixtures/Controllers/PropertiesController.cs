@@ -8,7 +8,7 @@ using Fixtures.Models;
 
 namespace Fixtures.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class PropertiesController : Controller
     {
         ApplicationDbContext db;

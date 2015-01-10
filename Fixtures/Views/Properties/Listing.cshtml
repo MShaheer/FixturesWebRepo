@@ -1,9 +1,4 @@
-﻿@{
-    Layout = "~/Views/Shared/_LayoutDashboard.cshtml";
-}
-
-
-<style>
+﻿<style>
     #filter-panel {
         margin-top: -20px;
         width: 100%;
@@ -13,19 +8,23 @@
     }
 
     #listing-panel {
-        height: 170px;
-        margin-top: 15px;
-        border-bottom: 1px solid #eaeaea;
     }
 
     .listing-item {
-        margin-top: 150px;
-
+        margin-top: 20px;
+        height: 120px;
+        border-bottom: 1px solid #eaeaea;
     }
 
+        .listing-item:hover {
+            background-color: #D8D8D8;
+        }
+
     .property-img {
-        width: 140px;
-        height: 140px;
+        margin-top: 10px;
+        margin-left: 5px;
+        width: 100px;
+        height: 100px;
     }
 </style>
 
@@ -34,16 +33,30 @@
     <h3>Filter Panel</h3>
 </div>
 
-<div id="listing-panel">
-    <div class="listing-item">
-        <div class="row">
-            <div class="property-img-container col-md-3">
-                <img src="#" class="property-img img-thumbnail">
+<div id="listing-panel" class="col-md-12">
+    @for (int i = 0; i < 5; i++)
+    {
+        <div class="listing-item">
+            <div class="row">
+                <div class="property-img-container col-md-2">
+                    <img src="#" class="property-img img-thumbnail">
+                </div>
+                <div class="property-desc-title col-md-7">
+                    <a href="#"><h2>Upper East Side Room</h2></a>
+                </div>
+                <div class="property-desc-detail col-md-7">
+                    <h4>Private Room. 11 Reviews. Karachi, Pakistan</h4>
+                </div>
             </div>
-            <div class="property-desc-container col-md-6">
-                <h2>Test Property</h2>
-            </div>
+
         </div>
-       
-    </div>
+    }
 </div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<script>
+    $(function () {
+        $()
+    })
+</script>
