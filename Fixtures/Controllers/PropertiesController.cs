@@ -39,9 +39,7 @@ namespace Fixtures.Controllers
         [HttpPost]
         public ActionResult PostAd(Property propertyForm)
         {
-
-            //db.Properties.Add(propertyForm);
-            //db.SaveChanges();
+            _propertiesService.AddProperty(propertyForm);
 
             return View();
         }

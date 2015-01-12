@@ -25,5 +25,12 @@ namespace Services
         {
             return _db.Properties.Where(p => p.Location == location).ToList();
         }
+
+        public void AddProperty(Property property)
+        {
+            _db.Properties.Add(property);
+
+            _db.SaveChanges();
+        }
     }
 }
