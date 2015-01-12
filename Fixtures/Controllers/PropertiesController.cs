@@ -5,24 +5,28 @@ using System.Web;
 using System.Web.Mvc;
 using COMMON.Models;
 using Fixtures.Models;
+using Services;
 
 namespace Fixtures.Controllers
 {
     //[Authorize]
     public class PropertiesController : Controller
     {
-        ApplicationDbContext db;
+        PropertiesService _propertiesService;
 
         public PropertiesController()
         {
-           db =  new ApplicationDbContext();
+            _propertiesService = new PropertiesService();
         }
         
 
         public ActionResult Listing(string location)
         {
-
-            return View();
+            if (location != null)
+            {
+                return View(_propertiesService.GetPropertiesByLocation(location));
+            }
+            return View(_propertiesService.GetAllProperties());
         }
 
         [HttpGet]
@@ -35,9 +39,7 @@ namespace Fixtures.Controllers
         [HttpPost]
         public ActionResult PostAd(Property propertyForm)
         {
-
-            db.Properties.Add(propertyForm);
-            db.SaveChanges();
+            _propertiesService.AddProperty(propertyForm);
 
             return View();
         }
