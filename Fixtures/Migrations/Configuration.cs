@@ -5,14 +5,14 @@ namespace Fixtures.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Fixtures.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Services.AppDb.FixturesDb>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(Fixtures.Models.ApplicationDbContext context)
+        protected override void Seed(Services.AppDb.FixturesDb context)
         {
             //  This method will be called after migrating to the latest version.
 
